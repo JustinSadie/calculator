@@ -1,0 +1,126 @@
+/* Overall page styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  color: #2d4275;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.coupling-caclulator {
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid #2d4275; 
+  border-radius: 8px;
+  box-sizing: border-box; 
+}
+
+h1 {
+  color: #2d4275;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input section styling */
+.input-section {
+  margin-bottom: 20px;
+
+  border: 2px solid #2d4275; 
+  border-radius: 8px;
+  box-sizing: border-box; 
+}
+
+.input-section h2 {
+  color: #2d4275;
+  margin-bottom: 10px;
+}
+
+input,
+select {
+  padding: 8px; /* Make the input fields smaller */
+  margin-bottom: 10px;
+  width: calc(100% - 16px); /* Adjust width to account for padding and borders */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Container for buttons */
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Space between buttons */
+  margin-top: 10px; /* Space from the fields above */
+  width: calc(100% - 16px); /* Adjust width to account for padding and borders */
+}
+
+button {
+  padding: 6px 12px; /* Adjust padding if needed */
+  background-color: #2d4275;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  
+  
+}
+
+button:hover {
+  background-color: #1a2a4f;
+}
+
+/* Small clear button styling */
+button.clear {
+  padding: 4px 8px; /* Smaller size for the clear button */
+  background-color: #e74c3c; /* A red color for the clear button */
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px; /* Smaller font size */
+}
+
+button.clear:hover {
+  background-color: #c0392b; /* Darker red for hover effect */
+}
+
+
+/* Output section styling */
+.output-section {
+  margin-top: 40px;
+}
+
+.output-section h2 {
+  color: #2d4275;
+  margin-bottom: 10px;
+}
+
+.result {
+  margin-bottom: 10px;
+}
+
+.result label {
+  display: block;
+  margin-bottom: 5px;
+  color: #2d4275;
+}
+
+.result input {
+  padding: 8px; /* Make the output fields smaller */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: calc(100% - 16px); /* Adjust width to account for padding and borders */
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+}
+
+.result input[readonly] {
+  background-color: #e6e6e6;
+  cursor: not-allowed;
+}
+
